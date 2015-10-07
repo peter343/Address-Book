@@ -91,7 +91,7 @@ public class AddressBook {
                 continue;
             }
             else {
-                System.out.println("new contact");
+            
                 System.out.printf("Name: %s%n", this.contacts[i].getName());
                 System.out.printf("Number: %d%n", this.contacts[i].getNumber());
                 System.out.printf("Address: %s%n%n", this.contacts[i].getAddress());
