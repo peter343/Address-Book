@@ -1,5 +1,10 @@
 /**
- * Created by Andrew Peterson on 10/7/2015.
+ *CS 180 - Contact - Lab07
+ *
+ * Defines the contact object
+ *
+ * @author Andrew Peterson, peter343@purdue.edu
+ * @version 10.7.15
  */
 public class Contact {
 
@@ -8,12 +13,14 @@ public class Contact {
     private String address; //the address of the user
 
     public Contact(String name) {
-        this.name = name;
+        //this.name = name;
+        //this(name, 0);
+        this(name, 0, null);
     }
-
-    public Contact(String name, long number) {
-        this.name = name;
-        this.number = number;
+    public Contact(String name, long number){
+            //this.name = name;
+            //this.number = number;
+        this(name, number, null);
     }
 
     public Contact(String name, long number, String address) {
@@ -45,9 +52,10 @@ public class Contact {
     public void setAddress(String address) {
         this.address = address;
     }
+
     public boolean equals(Contact s){
 
-        if(this.name == ){
+        if(this.name.equals(s.getName())){
             return true;
         }
         else return false;
