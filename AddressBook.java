@@ -22,7 +22,7 @@ public class AddressBook {
 
     public boolean addContact(Contact contact){
         if(totalContacts == maxContacts){
-            contacts = Arrays.copyOf(contacts , maxContacts *= 2);
+            contacts = Arrays.copyOf(contacts , maxContacts * 2);
         }
         if(!contains(contact)) {
             contacts[totalContacts] = contact;
